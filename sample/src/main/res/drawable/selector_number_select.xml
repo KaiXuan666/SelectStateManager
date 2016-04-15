@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    <item android:drawable="@drawable/layer_number_select" android:state_selected="true"/>
+        <item android:drawable="@drawable/layer_number_unselect" android:state_selected="false"></item>-->
+    <item android:state_selected="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/a" />
+            <item android:bottom="3dp" android:drawable="@color/b" />
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:drawable="@color/e6"  />
+            <item android:bottom="3dp" android:drawable="@color/f9" />
+        </layer-list>
+    </item>
+
+</selector>
