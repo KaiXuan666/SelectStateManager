@@ -17,13 +17,11 @@ public class MzwHolderCreator implements HolderCreator{
         return new Holder<LinearLayout>() {
             ImageView imageView;
             TextView textView;
-
             @Override
             public void addView(LinearLayout rootView, int position) {
                 imageView = (ImageView) rootView.getChildAt(0);
                 textView = (TextView) rootView.getChildAt(1);
             }
-
             @Override
             public boolean OnSelect(LinearLayout o, int position) {
                 textView.setTextColor(Color.parseColor("#5DB86B"));

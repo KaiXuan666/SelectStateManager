@@ -24,14 +24,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout quyundong = (LinearLayout) findViewById(R.id.quyundong);
         LinearLayout mzw = (LinearLayout) findViewById(R.id.mzw);
         LinearLayout tab = (LinearLayout) findViewById(R.id.tab);
-
         SelectStateManager.parseViewGroup(maimai, 0, new MaimaiHolderCreator());
         SelectStateManager.parseViewGroup(quyundong, 0, new QuyundongHolderCreator());
         SelectStateManager.parseViewGroup(mzw, 0, new MzwHolderCreator());
         Date date = new Date();
         SelectStateManager.parseViewGroup(tab, 0, new NumberSelectTabHolderCreator(
                 new MyTime(Times.getMMDDDate(date, 0), Times.getWeekOfDate(date, 0))));
-
-
     }
 }
